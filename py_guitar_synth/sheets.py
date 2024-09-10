@@ -20,11 +20,13 @@ Author
     Mustafa Alotbah
     Email: mustafa.alotbah@gmail.com
 """
-import importlib.resources as pkg_resources
+import importlib.resources as resources
 from py_guitar_synth.tab_parser import parse_guitar_tab_from_file
 
-with pkg_resources.path('py_guitar_synth.assets', 'law_bass.txt') as f:
+# Load the 'law_bass.txt' tab file
+with resources.as_file(resources.files('py_guitar_synth.assets').joinpath('law_bass.txt')) as f:
     law_bass_f_aini = parse_guitar_tab_from_file(str(f))
 
-with pkg_resources.path('py_guitar_synth.assets', 'agua_marina.txt') as f:
+# Load the 'agua_marina.txt' tab file
+with resources.as_file(resources.files('py_guitar_synth.assets').joinpath('agua_marina.txt')) as f:
     agua_marina = parse_guitar_tab_from_file(str(f))
