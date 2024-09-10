@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py_guitar_synth"
+version = "0.1.0"
+description = "A Python package for generating realistic guitar music from tab sheets by modeling guitar strings and performance techniques."
+authors = [
+    { name = "Mustafa Alotbah", email = "mustafa.alotbah@gmail.com" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+keywords = ["guitar", "music synthesis", "audio processing", "tab sheets"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "numpy",
+    "soundfile"
+]
+
+[tool.setuptools.packages]
+find = { }
+
+[tool.setuptools.package-data]
+"py_guitar_synth" = ["assets/*.wav", "assets/*.json", "assets/*.txt"]
+
+[project.urls]
+"Documentation" = "https://github.com/MustafaAlotbah/PyGuitarSynthesis/tree/main/docs"
+"Source" = "https://github.com/MustafaAlotbah/PyGuitarSynthesis"

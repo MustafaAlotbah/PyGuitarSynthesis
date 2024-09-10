@@ -1,0 +1,102 @@
+{
+  "supports_transitions": false,  // Pianos don't allow for smooth transitions between notes
+  "supports_vibrato": false,  // Pianos don't have vibrato naturally
+  "strings": [
+    {
+      "base_frequency": 329.63,  // E4 (treble)
+      "inharmonicity_coefficient": 0.00015,  // Slightly higher for a colder, metallic tone
+      "vibrato_frequency": 0.0,  // No vibrato
+      "vibrato_amplitude": 0.0,  // No vibrato
+      "attack_duration": 0.002,  // Quick hammer strike
+      "max_duration": 1.0,  // Shorter sustain
+      "dynamic_range_factor": 1.0,  // More restrained dynamic range
+      "fast_decay_rate": 10.0,  // Fast decay for a clear, sharp sound
+      "fast_decay_weight": 0.9,  // Heavily emphasizes fast decay
+      "mid_decay_rate": 2.0,  // Less emphasis on mid decay
+      "mid_decay_weight": 0.6,
+      "very_slow_decay_rate": 1.0,  // Minimal slow decay
+      "very_slow_decay_weight": 0.3,
+      "harmonics_weights": [0.9, 0.85, 0.8, 0.7, 0.6, 0.5, 0.45, 0.4, 0.35, 0.3, 0.25, 0.22, 0.2, 0.18, 0.16, 0.14, 0.12, 0.1, 0.08]
+    },
+    {
+      "base_frequency": 246.94,  // B3 (treble)
+      "inharmonicity_coefficient": 0.00015,
+      "vibrato_frequency": 0.0,
+      "vibrato_amplitude": 0.0,
+      "attack_duration": 0.002,
+      "max_duration": 1.0,
+      "dynamic_range_factor": 1.0,
+      "fast_decay_rate": 10.0,
+      "fast_decay_weight": 0.9,
+      "mid_decay_rate": 2.0,
+      "mid_decay_weight": 0.6,
+      "very_slow_decay_rate": 1.0,
+      "very_slow_decay_weight": 0.3,
+      "harmonics_weights": [0.9, 0.85, 0.8, 0.7, 0.6, 0.5, 0.45, 0.4, 0.35, 0.3, 0.25, 0.22, 0.2, 0.18, 0.16, 0.14, 0.12, 0.1, 0.08]
+    },
+    {
+      "base_frequency": 196.00,  // G3 (mid-treble)
+      "inharmonicity_coefficient": 0.0002,  // Slightly more for a colder tone
+      "vibrato_frequency": 0.0,
+      "vibrato_amplitude": 0.0,
+      "attack_duration": 0.002,
+      "max_duration": 1.2,  // Slightly longer sustain on mid frequencies
+      "dynamic_range_factor": 1.0,
+      "fast_decay_rate": 9.0,  // Fast decay for clarity
+      "fast_decay_weight": 0.9,
+      "mid_decay_rate": 2.0,
+      "mid_decay_weight": 0.6,
+      "very_slow_decay_rate": 1.0,
+      "very_slow_decay_weight": 0.3,
+      "harmonics_weights": [0.9, 0.85, 0.8, 0.7, 0.6, 0.5, 0.45, 0.4, 0.35, 0.3, 0.25, 0.22, 0.2, 0.18, 0.16, 0.14, 0.12, 0.1, 0.08]
+    },
+    {
+      "base_frequency": 146.83,  // D3 (bass)
+      "inharmonicity_coefficient": 0.0003,  // More inharmonicity for lower strings
+      "vibrato_frequency": 0.0,
+      "vibrato_amplitude": 0.0,
+      "attack_duration": 0.003,  // Slightly slower hammer strike in bass
+      "max_duration": 1.5,  // Slightly longer sustain for bass notes
+      "dynamic_range_factor": 1.0,
+      "fast_decay_rate": 8.0,
+      "fast_decay_weight": 0.9,
+      "mid_decay_rate": 2.0,
+      "mid_decay_weight": 0.6,
+      "very_slow_decay_rate": 1.0,
+      "very_slow_decay_weight": 0.3,
+      "harmonics_weights": [0.8, 0.7, 0.65, 0.6, 0.5, 0.45, 0.4, 0.35, 0.3, 0.25, 0.22, 0.2, 0.18, 0.16, 0.14, 0.12, 0.1, 0.08, 0.06]
+    },
+    {
+      "base_frequency": 110.00,  // A2 (bass)
+      "inharmonicity_coefficient": 0.0003,
+      "vibrato_frequency": 0.0,
+      "vibrato_amplitude": 0.0,
+      "attack_duration": 0.003,
+      "max_duration": 1.5,
+      "dynamic_range_factor": 1.0,
+      "fast_decay_rate": 8.0,
+      "fast_decay_weight": 0.9,
+      "mid_decay_rate": 2.0,
+      "mid_decay_weight": 0.6,
+      "very_slow_decay_rate": 1.0,
+      "very_slow_decay_weight": 0.3,
+      "harmonics_weights": [0.8, 0.7, 0.65, 0.6, 0.5, 0.45, 0.4, 0.35, 0.3, 0.25, 0.22, 0.2, 0.18, 0.16, 0.14, 0.12, 0.1, 0.08, 0.06]
+    },
+    {
+      "base_frequency": 82.41,  // E2 (bass)
+      "inharmonicity_coefficient": 0.00035,  // Highest inharmonicity for the lowest string
+      "vibrato_frequency": 0.0,
+      "vibrato_amplitude": 0.0,
+      "attack_duration": 0.003,
+      "max_duration": 1.7,  // Longest sustain for the lowest string
+      "dynamic_range_factor": 1.0,
+      "fast_decay_rate": 7.0,  // Slower decay to maintain deep resonant tones
+      "fast_decay_weight": 0.9,
+      "mid_decay_rate": 2.0,
+      "mid_decay_weight": 0.6,
+      "very_slow_decay_rate": 1.0,
+      "very_slow_decay_weight": 0.3,
+      "harmonics_weights": [0.8, 0.7, 0.65, 0.6, 0.5, 0.45, 0.4, 0.35, 0.3, 0.25, 0.22, 0.2, 0.18, 0.16, 0.14, 0.12, 0.1, 0.08, 0.06]
+    }
+  ]
+}

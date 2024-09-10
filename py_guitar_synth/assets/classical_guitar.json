@@ -1,0 +1,102 @@
+{
+  "supports_transitions": true,
+  "supports_vibrato": true,
+  "strings": [
+    {
+      "base_frequency": 329.63,  // E4 (treble)
+      "inharmonicity_coefficient": 0.0003,  // Less inharmonicity for steel strings
+      "vibrato_frequency": 6.0,  // Slightly faster vibrato for a crisp sound
+      "vibrato_amplitude": 0.0004,  // More noticeable vibrato than nylon
+      "attack_duration": 0.003,  // Faster attack for a sharp, clear sound
+      "max_duration": 1.5,  // Longer sustain than nylon strings
+      "dynamic_range_factor": 1.3,  // Greater dynamic response for steel
+      "fast_decay_rate": 8.5,  // Moderate decay for clarity
+      "fast_decay_weight": 0.85,
+      "mid_decay_rate": 3.0,  // Emphasize mid decay for a balanced tone
+      "mid_decay_weight": 0.55,
+      "very_slow_decay_rate": 1.2,  // Balanced slow decay for sustain
+      "very_slow_decay_weight": 0.35,
+      "harmonics_weights": [0.95, 1.0, 0.85, 0.75, 0.6, 0.45, 0.4, 0.38, 0.3, 0.2, 0.18, 0.15, 0.13, 0.1, 0.085, 0.08, 0.075, 0.07, 0.06]
+    },
+    {
+      "base_frequency": 246.94,  // B3 (treble)
+      "inharmonicity_coefficient": 0.0003,
+      "vibrato_frequency": 6.0,
+      "vibrato_amplitude": 0.0004,
+      "attack_duration": 0.003,
+      "max_duration": 1.5,
+      "dynamic_range_factor": 1.3,
+      "fast_decay_rate": 8.5,
+      "fast_decay_weight": 0.85,
+      "mid_decay_rate": 3.0,
+      "mid_decay_weight": 0.55,
+      "very_slow_decay_rate": 1.2,
+      "very_slow_decay_weight": 0.35,
+      "harmonics_weights": [0.95, 1.0, 0.85, 0.75, 0.6, 0.45, 0.4, 0.38, 0.3, 0.2, 0.18, 0.15, 0.13, 0.1, 0.085, 0.08, 0.075, 0.07, 0.06]
+    },
+    {
+      "base_frequency": 196.00,  // G3 (mid-treble)
+      "inharmonicity_coefficient": 0.00035,  // Slightly increased inharmonicity for added warmth
+      "vibrato_frequency": 5.8,  // Slightly slower vibrato for balance
+      "vibrato_amplitude": 0.0005,  // More noticeable vibrato
+      "attack_duration": 0.0035,  // Crisp but slightly slower attack than higher strings
+      "max_duration": 1.7,
+      "dynamic_range_factor": 1.4,  // More dynamic expression
+      "fast_decay_rate": 8.0,
+      "fast_decay_weight": 0.85,
+      "mid_decay_rate": 3.0,
+      "mid_decay_weight": 0.55,
+      "very_slow_decay_rate": 1.1,
+      "very_slow_decay_weight": 0.4,
+      "harmonics_weights": [0.95, 1.0, 0.85, 0.7, 0.6, 0.45, 0.4, 0.35, 0.28, 0.2, 0.18, 0.15, 0.12, 0.1, 0.085, 0.075, 0.07, 0.06, 0.055]
+    },
+    {
+      "base_frequency": 146.83,  // D3 (bass)
+      "inharmonicity_coefficient": 0.0006,  // More warmth from the bass strings
+      "vibrato_frequency": 5.5,  // Slower vibrato for richer tones
+      "vibrato_amplitude": 0.0005,  // More noticeable vibrato in the bass
+      "attack_duration": 0.004,  // Still fast but less sharp than treble
+      "max_duration": 2.0,  // Longer sustain on the bass strings
+      "dynamic_range_factor": 1.5,  // Strong dynamic response
+      "fast_decay_rate": 7.0,  // Reduced fast decay for smoother tone
+      "fast_decay_weight": 0.9,
+      "mid_decay_rate": 3.0,
+      "mid_decay_weight": 0.55,
+      "very_slow_decay_rate": 1.3,
+      "very_slow_decay_weight": 0.5,
+      "harmonics_weights": [0.5, 0.3, 0.2, 0.20, 0.2, 0.2, 0.2, 0.15, 0.13, 0.1, 0.09, 0.08, 0.06, 0.06, 0.05, 0.04, 0.04, 0.035, 0.035]
+    },
+    {
+      "base_frequency": 110.00,  // A2 (bass)
+      "inharmonicity_coefficient": 0.0006,
+      "vibrato_frequency": 5.5,
+      "vibrato_amplitude": 0.0004,
+      "attack_duration": 0.004,
+      "max_duration": 2.0,
+      "dynamic_range_factor": 1.5,
+      "fast_decay_rate": 7.0,
+      "fast_decay_weight": 0.9,
+      "mid_decay_rate": 3.0,
+      "mid_decay_weight": 0.55,
+      "very_slow_decay_rate": 1.3,
+      "very_slow_decay_weight": 0.5,
+      "harmonics_weights": [0.5, 0.3, 0.2, 0.20, 0.2, 0.2, 0.2, 0.15, 0.13, 0.1, 0.09, 0.08, 0.06, 0.06, 0.05, 0.04, 0.04, 0.035, 0.035]
+    },
+    {
+      "base_frequency": 82.41,  // E2 (bass)
+      "inharmonicity_coefficient": 0.0007,  // More warmth for the lowest string
+      "vibrato_frequency": 5.3,  // A bit slower vibrato
+      "vibrato_amplitude": 0.0005,
+      "attack_duration": 0.004,
+      "max_duration": 2.2,  // Longest sustain for the lowest string
+      "dynamic_range_factor": 1.5,
+      "fast_decay_rate": 6.5,  // Slower decay for deep, resonant tones
+      "fast_decay_weight": 0.9,
+      "mid_decay_rate": 3.0,
+      "mid_decay_weight": 0.55,
+      "very_slow_decay_rate": 1.3,
+      "very_slow_decay_weight": 0.5,
+      "harmonics_weights": [0.5, 0.3, 0.2, 0.20, 0.2, 0.2, 0.2, 0.15, 0.13, 0.1, 0.09, 0.08, 0.06, 0.06, 0.05, 0.04, 0.04, 0.035, 0.035]
+    }
+  ]
+}
