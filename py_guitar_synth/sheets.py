@@ -20,8 +20,12 @@ Author
     Mustafa Alotbah
     Email: mustafa.alotbah@gmail.com
 """
+import sys
 import importlib.resources as resources
 from py_guitar_synth.tab_parser import parse_guitar_tab_from_file
+
+if sys.version_info < (3, 10):
+    import importlib_resources as resources
 
 # Load the 'law_bass.txt' tab file
 with resources.as_file(resources.files('py_guitar_synth.assets').joinpath('law_bass.txt')) as f:

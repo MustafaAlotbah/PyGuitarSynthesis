@@ -20,18 +20,20 @@ Author
     Mustafa Alotbah
     Email: mustafa.alotbah@gmail.com
 """
+import sys
 import importlib.resources as resources
 from py_guitar_synth.instrument_parser import load_instrument_from_json, load_impulse_response
+
+if sys.version_info < (3, 10):
+    import importlib_resources as resources
 
 # Load the JSON file with the guitar's physical properties
 with resources.as_file(resources.files('py_guitar_synth.assets').joinpath('classical_guitar.json')) as f:
     default_classical_guitar = load_instrument_from_json(str(f))
 
-# Load the JSON file with the violine's physical properties
 with resources.as_file(resources.files('py_guitar_synth.assets').joinpath('violine.json')) as f:
     default_violine = load_instrument_from_json(str(f))
 
-# Load the JSON file with the piano's physical properties
 with resources.as_file(resources.files('py_guitar_synth.assets').joinpath('piano.json')) as f:
     default_piano = load_instrument_from_json(str(f))
 
