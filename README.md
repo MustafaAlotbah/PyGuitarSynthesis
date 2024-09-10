@@ -21,19 +21,10 @@
 
 ##  Play Samples
 
-**Osad Eini with a classical guitar**
+**Osad Eini**
 
-<audio controls>
-  <source src="media/osad_eini_violin.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
-**Osad Eini with a violin**
-
-<audio controls>
-  <source src="/media/osad_eini_violin.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+- ['Osad Eini' with a classical guitar](/media/osad_eini_classical_guitar.mp3)
+- ['Osad Eini' with a violin](/media/osad_eini_violin.mp3)
 
 ## Installation
 
