@@ -31,5 +31,4 @@ setup(
         'Intended Audience :: Developers',
         'Topic :: Multimedia :: Sound/Audio',
     ],
-    python_requires='>=3.6',
 )
