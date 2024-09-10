@@ -1,7 +1,12 @@
-py_guitar_synth
+Py Guiter Synthesizer
 ===============
 
 Welcome to the `py_guitar_synth` project documentation! This project focuses on synthesizing realistic guitar sounds based on guitar tab sheets, simulating the physical and musical characteristics of strings and performance techniques.
+
+.. image:: /docs/logo.png
+   :alt: py_guitar_synth Logo
+   :align: center
+   :scale: 10%
 
 .. contents:: Table of Contents
    :depth: 3
@@ -105,11 +110,26 @@ Notes played simultaneously across different strings can be written in a vertica
 
 This represents an E minor chord.
 
-Example:
+A chord can also be played while the hand is gradually plucking the strings, resulting in a technique known as arpeggiation or a rolled chord.
+This technique involves plucking each string in quick succession rather than striking all the strings at once.
+In the following example, the "r" symbol indicates that each note should "let ring," meaning the string should continue to resonate after being plucked.
 
 .. code-block:: bash
 
-    e|-3!-3r--|   # Eighth note followed by let ring
+    e |----------------------3++r-|
+    B |------------------3!!r-----|
+    G |--------------0!!r---------|
+    D |----------0!!r-------------|
+    A |-----2!!r------------------|
+    E |-3!!r----------------------|
+
+This notation represents a G major chord, but instead of strumming all the strings simultaneously, the player gradually plucks each string,
+starting from the low E string to the high e string. As each note is played, the previous ones continue to resonate due to the "r" (letRing=True),
+allowing for a smooth, cascading effect as the chord is built up across the strings.
+
+The numbers represent the frets, while the symbols (e.g., ++, !!) indicate the duration of each note, from longer whole notes (++) to shorter sixteenth notes (!!).
+This rolling technique creates a more textured and dynamic sound, often used in classical and fingerstyle guitar playing.
+
 
 Custom Instrument Creation
 ---------------------------

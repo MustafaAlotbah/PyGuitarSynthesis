@@ -20,6 +20,7 @@ classifiers = [
 dependencies = [
     "numpy",
     "soundfile",
+    "sounddevice",
     "argparse"
 ]
 

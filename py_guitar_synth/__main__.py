@@ -1,5 +1,7 @@
 import argparse
 import sounddevice as sd
+import threading
+
 from py_guitar_synth import (
     default_classical_guitar,
     default_violine,
@@ -22,6 +24,7 @@ SHEETS = {
     'law_bass_f_aini': law_bass_f_aini,
     'agua_marina': agua_marina
 }
+
 
 def main():
     parser = argparse.ArgumentParser(
@@ -86,6 +89,8 @@ def main():
     # Load the selected instrument and sheet
     instrument = INSTRUMENTS[args.instrument]
 
+    print(f"Reading Sheet {args.sheet}")
+
     # Load the sheet, either from predefined sheets or from a file
     if args.sheet in SHEETS:
         sheet = SHEETS[args.sheet]
@@ -110,10 +115,23 @@ def main():
         echo_decay=args.echo_decay
     )
 
-    # Play the generated audio using sounddevice
-    print(f"Playing {args.sheet} with {args.instrument}...")
-    sd.play(signal, args.sr)
-    sd.wait()
+    def play():
+        # Play the generated audio using sounddevice
+        print(f"Playing '{sheet.title}' by '{sheet.author}' with {args.instrument}...")
+        sd.play(signal, args.sr)
+        sd.wait()
+
+    # Start the playback in a separate thread
+    play_thread = threading.Thread(target=play)
+    play_thread.start()
+
+    # Main thread continues to run
+    try:
+        while play_thread.is_alive():
+            play_thread.join(timeout=1)
+    except KeyboardInterrupt:
+        sd.stop()
+        print("Playback stopped.")
 
 
 if __name__ == '__main__':

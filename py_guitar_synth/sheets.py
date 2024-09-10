@@ -34,3 +34,7 @@ with resources.as_file(resources.files('py_guitar_synth.assets').joinpath('law_b
 # Load the 'agua_marina.txt' tab file
 with resources.as_file(resources.files('py_guitar_synth.assets').joinpath('agua_marina.txt')) as f:
     agua_marina = parse_guitar_tab_from_file(str(f))
+
+# Load the 'agua_marina.txt' tab file
+with resources.as_file(resources.files('py_guitar_synth.assets').joinpath('osad_eini.txt')) as f:
+    osad_eini = parse_guitar_tab_from_file(str(f))
