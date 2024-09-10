@@ -31,8 +31,8 @@
 You can clone this repository and install the package locally:
 
 ```bash
-git clone https://github.com/mustafaalotbah/py_guitar_synth.git
-cd py_guitar_synth
+git clone https://github.com/MustafaAlotbah/PyGuitarSynthesis.git
+cd PyGuitarSynthesis
 pip install .
 ```
 
@@ -251,7 +251,7 @@ To contribute to the project, clone the repository and install the dependencies 
 
 ```bash
 git clone https://github.com/MustafaAlotbah/PyGuitarSynthesis.git
-cd py_guitar_synth
+cd PyGuitarSynthesis
 pip install -r requirements.txt
 ```
 
