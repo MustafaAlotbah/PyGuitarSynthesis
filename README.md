@@ -1,5 +1,5 @@
 
-# py_guitar_synth
+# Py Guitar Synthesizer
 
 **py_guitar_synth** is a Python package for generating realistic guitar music from tab sheets by modeling the physical and musical characteristics of guitar strings and performance techniques. The project allows users to convert guitar tabs into audio, simulating strokes, note durations, transitions, and string properties.
 
