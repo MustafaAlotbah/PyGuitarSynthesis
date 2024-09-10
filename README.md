@@ -13,6 +13,8 @@
 - Built-in JSON-based configuration for instruments.
 - Easily extendable for new instruments and custom sounds.
 
+[Check out the documentation here](/docs/index.rst)
+
 ## Installation
 
 You can clone this repository and install the package locally:

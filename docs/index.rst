@@ -1,4 +1,3 @@
-
 py_guitar_synth
 ===============
 
@@ -35,7 +34,8 @@ Tab Syntax
 
 The guitar tab sheets used in this project follow a specific syntax to define frets, notes, and other musical elements. Here’s a breakdown of the syntax:
 
-### Strings
+Strings
+-------
 
 Each string is represented by a line with the corresponding string name:
 - `e`: High E string
@@ -58,7 +58,8 @@ Example:
 
 This example shows that the third fret on the high `e` string is played.
 
-### Frets
+Frets
+-----
 
 Numbers represent the frets, while letters `a` to `f` are used for frets 10-15:
 
@@ -66,7 +67,8 @@ Numbers represent the frets, while letters `a` to `f` are used for frets 10-15:
 
     e|--a---3--|  # Fret 10 on high E, fret 3 next
 
-### Note Values
+Note Values
+-----------
 
 Symbols are used to represent note durations:
 - `!`: Eighth note (`NoteValue.eighthNote`)
@@ -81,7 +83,8 @@ Example:
 
     e|-3+---3!!--|  # Half note followed by a sixteenth note
 
-### Let Ring
+Let Ring
+--------
 
 To indicate that a note should sustain beyond its nominal duration, the letter `r` is used:
 
@@ -89,7 +92,8 @@ To indicate that a note should sustain beyond its nominal duration, the letter `
 
     e|-3r--|
 
-### Chords and Simultaneous Notes
+Chords and Simultaneous Notes
+-----------------------------
 
 Notes played simultaneously across different strings can be written in a vertical column:
 
@@ -106,6 +110,35 @@ Example:
 .. code-block:: bash
 
     e|-3!-3r--|   # Eighth note followed by let ring
+
+Custom Instrument Creation
+---------------------------
+
+For advanced users seeking to define their own instruments, a custom JSON structure can be created, which captures the nuanced characteristics of the instrument’s
+strings, vibrato, harmonic richness, and decay profiles.
+
+The key parameters include:
+
+- **`supports_transitions`**: Whether the instrument supports glissando and legato transitions, crucial for smooth melodic contouring.
+- **`supports_vibrato`**: Defines the presence of vibrato, an essential feature for enhancing tonal expressivity through periodic modulation.
+
+Strings
+-------
+
+Each string has the following parameters, enabling the user to model complex acoustic phenomena:
+
+- **`base_frequency`**: The fundamental pitch (Hz) of the string. This directly affects the modal frequencies of the vibrating string.
+- **`inharmonicity_coefficient`**: A value controlling the degree of inharmonicity—deviation from pure harmonic frequencies due to stiffness or non-linearity.
+- **`vibrato_frequency`**: Frequency of the vibrato modulation, enhancing the periodic tonal fluctuation.
+- **`vibrato_amplitude`**: The depth of the vibrato, determining the extent of pitch variation.
+- **`attack_duration`**: How quickly the sound reaches its maximum amplitude, defined in milliseconds (ms). Shorter durations are characteristic of sharp attacks.
+- **`max_duration`**: The maximum sustain of the note before decay, critical for long tones.
+- **`dynamic_range_factor`**: Modulates the intensity of sound based on the plucking force, simulating the physical interaction of the player.
+- **`decay_rates`**: Defines the multi-phase decay envelope of the note. Fast, mid, and slow decay rates determine the sound's evolution over time.
+- **`harmonics_weights`**: Controls the amplitude of harmonics in the frequency spectrum, contributing to the timbral identity of the instrument.
+
+Creating a custom instrument allows for the synthesis of any stringed instrument, modeled using these principles of acoustics and digital sound synthesis.
+
 
 Modules
 -------
